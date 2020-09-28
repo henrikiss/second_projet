@@ -30,39 +30,16 @@
 /* Paramètres mentions légales */
 /* Paramètres footer */
 /* keyframes wiggle */
-@-webkit-keyframes wiggle {
-  25% {
-    -webkit-transform: translateX(5%);
-            transform: translateX(5%);
-  }
-  75% {
-    -webkit-transform: translateX(-5%);
-            transform: translateX(-5%);
-  }
-}
 @keyframes wiggle {
   25% {
-    -webkit-transform: translateX(5%);
-            transform: translateX(5%);
+    transform: translateX(5%);
   }
   75% {
-    -webkit-transform: translateX(-5%);
-            transform: translateX(-5%);
+    transform: translateX(-5%);
   }
 }
 
 /* keyframes dots */
-@-webkit-keyframes dots {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 @keyframes dots {
   0% {
     opacity: 0;
@@ -104,16 +81,9 @@ header {
   background-color: #579c87;
   text-align: center;
   height: 90px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
 }
 
 header h1 {
@@ -122,12 +92,8 @@ header h1 {
   font-weight: bold;
   margin: auto;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 /* footer */
@@ -136,16 +102,11 @@ footer {
   height: 60px;
   background-color: #579c87;
   color: #fdcb46;
-  position: -webkit-sticky;
   position: sticky;
   bottom: 0;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 footer h2 {
@@ -160,8 +121,7 @@ footer .contact {
 
 /* animations footer */
 .anim:hover {
-  -webkit-animation: wiggle 150ms infinite ease-in-out;
-          animation: wiggle 150ms infinite ease-in-out;
+  animation: wiggle 150ms infinite ease-in-out;
 }
 
 /* éléments page d'accueil */
@@ -172,16 +132,9 @@ a {
   width: 100%;
   height: 100%;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* main */
@@ -189,25 +142,14 @@ main {
   background-color: #ffffff;
   margin: auto;
   padding-bottom: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: 30px;
 }
 
@@ -225,34 +167,21 @@ section {
   height: 360px;
   margin: 20px;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-shadow: 0 0 20px #bbba;
-          box-shadow: 0 0 20px #bbba;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 0 20px #bbba;
 }
 
 /* Animation zoom */
 .zoom {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  transform: scale(0.8);
   opacity: 1;
-  -webkit-transition: -webkit-transform 300ms ease-in-out;
-  transition: -webkit-transform 300ms ease-in-out;
   transition: transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
 
 .zoom:hover {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   opacity: 0.3;
 }
 
@@ -283,7 +212,6 @@ section {
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
-  background-image: -webkit-gradient(linear, left top, right top, from(#f04a5e), to(#f78f6a));
   background-image: linear-gradient(0.25turn, #f04a5e, #f78f6a);
 }
 
@@ -345,16 +273,9 @@ aside {
   margin: auto;
   text-align: center;
   border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* loading dots */
@@ -367,26 +288,22 @@ aside {
 
 .loading span {
   display: inline-block;
-  -webkit-animation: dots 2s infinite ease-in-out;
-          animation: dots 2s infinite ease-in-out;
+  animation: dots 2s infinite ease-in-out;
   font-size: 2em;
 }
 
 .loading .point2 {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 .loading .point3 {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 
 /* éléments généraux des pages supplémentaires */
 .title {
   border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   width: auto;
   height: auto;
 }
@@ -397,34 +314,22 @@ aside {
   width: 90%;
 }
 
-.subtitle_1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.subtitle1 {
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 90%;
   margin: auto;
 }
 
 .subtitle2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: auto;
 }
 
 .bottom_title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .bottom_title span {
@@ -434,12 +339,8 @@ aside {
 }
 
 .dish {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 90%;
   margin: auto;
 }
@@ -559,7 +460,6 @@ aside {
 
 /* Dégradés couleur */
 .degrade1 {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(30%, #c77412), color-stop(70%, #905bfd));
   background-image: linear-gradient(0.25turn, #c77412 30%, #905bfd 70%);
   font-family: "Kurale", serif;
   font-size: 2.5em;
@@ -570,7 +470,6 @@ aside {
 
 .degrade2 {
   line-height: 70px;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(30%, #0431df), color-stop(50%, #518cf0), color-stop(20%, #0887fb));
   background-image: linear-gradient(0.25turn, #0431df 30%, #518cf0 50%, #0887fb 20%);
   font-family: "Dancing Script", cursive;
   font-size: 2.5em;
@@ -580,7 +479,6 @@ aside {
 }
 
 .degrade3 {
-  background-image: -webkit-gradient(linear, left top, right top, from(#3d9339), to(#bfff7e));
   background-image: linear-gradient(0.25turn, #3d9339, #bfff7e);
   font-family: "Kaushan Script", cursive;
   font-size: 2.5em;
@@ -594,7 +492,6 @@ aside {
 .border {
   display: inline;
   text-decoration: none;
-  -webkit-transition: background-size 0.5s;
   transition: background-size 0.5s;
 }
 
@@ -603,9 +500,8 @@ aside {
 }
 
 /* border page 1 */
-.border_1 {
+.border1 {
   color: #3c1218;
-  background: -webkit-gradient(linear, left bottom, left top, from(#f04a5e), color-stop(10%, #f04a5e), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
   background: linear-gradient(to top, #f04a5e 0%, #f04a5e 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }
 
@@ -613,47 +509,40 @@ aside {
 /* border 1 */
 .border2 {
   color: #c77412;
-  background: -webkit-gradient(linear, left bottom, left top, from(#c77412), color-stop(10%, #c77412), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
   background: linear-gradient(to top, #c77412 0%, #c77412 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }
 
 /* border 2 */
 .border3 {
   color: #a56799;
-  background: -webkit-gradient(linear, left bottom, left top, from(#a56799), color-stop(10%, #a56799), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
   background: linear-gradient(to top, #a56799 0%, #a56799 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }
 
 /* border 3 */
 .border4 {
   color: #6e4ccc;
-  background: -webkit-gradient(linear, left bottom, left top, from(#6e4ccc), color-stop(10%, #6e4ccc), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
   background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }
 
 /* border page 3 */
 .border5 {
   color: #000000;
-  background: -webkit-gradient(linear, left bottom, left top, from(#0431df), color-stop(10%, #0431df), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
   background: linear-gradient(to top, #0431df 0%, #0431df 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }
 
 .border6 {
   color: #000000;
-  background: -webkit-gradient(linear, left bottom, left top, from(#518cf0), color-stop(10%, #518cf0), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
   background: linear-gradient(to top, #518cf0 0%, #518cf0 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }
 
 .border7 {
   color: #000000;
-  background: -webkit-gradient(linear, left bottom, left top, from(#0887fb), color-stop(10%, #0887fb), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
   background: linear-gradient(to top, #0887fb 0%, #0887fb 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }
 
 /* border page 4 */
 .border8 {
   color: #000000;
-  background: -webkit-gradient(linear, left bottom, left top, from(#bfff7e), color-stop(10%, #bfff7e), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
   background: linear-gradient(to top, #bfff7e 0%, #bfff7e 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }
 
@@ -665,16 +554,9 @@ aside {
     height: 330px;
   }
   .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
     margin: auto;
   }
   .page {
@@ -687,16 +569,9 @@ aside {
     font-size: 1.3em;
   }
   .page .dish {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
   }
   .line {
     width: 15%;
@@ -706,12 +581,8 @@ aside {
     margin-top: 30px;
   }
   footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    position: -webkit-sticky;
+    justify-content: space-around;
     position: sticky;
     bottom: 0;
     margin: 0px;
@@ -733,12 +604,8 @@ aside {
     font-size: 1.5em;
   }
   footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    position: -webkit-sticky;
+    justify-content: space-around;
     position: sticky;
     bottom: 0;
     margin: 0px;
@@ -752,16 +619,11 @@ aside {
     height: 60px;
     background-color: #579c87;
     color: #fdcb46;
-    position: -webkit-sticky;
     position: sticky;
     bottom: 0;
     text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
 }
 /*# sourceMappingURL=style.css.map */

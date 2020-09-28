@@ -1,0 +1,11 @@
+$small: 720px;
+$large: 1024px;
+
+/* écrans moins de 720 px */
+$small_screen: "only screen and (max-width: #{$small})";
+
+/* écrans de plus de 720 px et moins de 1024px */
+$medium_screen: "only screen and (max-width: #{$large}) and (min-width: #{$small})";
+
+/* landscape */
+$landscape: (orientation: landscape);

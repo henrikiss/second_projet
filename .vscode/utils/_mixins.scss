@@ -1,0 +1,203 @@
+/* Paramètres flex */
+@mixin flex_column
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@mixin flex_center
+{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex_space_between
+{
+    display: flex;
+	justify-content: space-between;
+}
+
+@mixin flex_sticky
+{
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    bottom: 0;
+    margin: 0px;
+}
+
+/* Paramètres header */
+@mixin header
+{
+    font-family: $main_font;
+    font-size: 1.3em;
+    background-color: $primary_color;
+    text-align: center;
+    height: 90px;
+}
+
+@mixin header_h1
+{
+    color: $logo_color;
+    font-size: 2em;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+}
+
+/* Paramètres main */
+@mixin main
+{
+    background-color: $secondary_color;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+/* paramètres section */
+@mixin section
+{
+    width: 290px;
+    height: 360px;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Paramètres menu 1 */
+@mixin menu1
+{
+    background-color: $third_color;
+    color: $first_menu;
+    font-family: $second_font;
+    font-weight: lighter;
+}
+
+/* Paramètres menu 2 */
+@mixin menu2
+{
+    background-color: $fouth_color;
+    color: $second_menu;
+    font-family: $third_font;
+    font-weight: 100;
+}
+
+/* Paramètres menu 3 */
+@mixin menu3
+{
+    background-color: $fifth_color;
+    color: $third_menu;
+    font-family: $second_font;
+}
+
+/* Paramètres menu 4 */
+@mixin menu4
+{
+    background-color: $sixt_color;
+    color: $fourth_menu;
+    font-family: $second_font;
+}
+
+/* Paramètres a */
+@mixin a_style
+{
+    color: $logo_color;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+/* Paramètres icon_music */
+@mixin icon_music
+{
+    font-size: 2em;
+    display: inline-block;
+    padding: 5px;
+}
+
+/* Paramètres dégradés */
+/* dégradé note */
+@mixin icon_degraded
+{
+    background-clip: initial;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+@mixin degraded($font)
+{
+    font-family: $font;
+    font-size: 2.5em;
+    background-clip: initial;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Paramètres généraux pages des menus */
+/* décorations lignes */
+@mixin line_style1
+{
+    display: inline-block;
+    height: 8px;
+    width: 220px;
+}
+
+@mixin line_style2
+{
+    display: inline-block;
+    height: 12px;
+    width: 220px;
+}
+
+/* soulignage */
+@mixin underline($color, $background)
+{
+    color: $color;
+    background: linear-gradient(to top, $background 0%, $background 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+}
+
+/* Paramètres aside */
+@mixin aside
+{
+    background-color: $primary_color;
+    color: $logo_color;
+    width: 260px;
+    height: 50px;
+    margin:auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+@mixin aside_h2
+{
+    font-family: $main_font;
+    font-weight: 400;
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+
+/* Paramètres mentions légales */
+@mixin mentions
+{
+    background-color: $fouth_color;
+    color: $first_menu;
+    padding: 20px;
+}
+
+/* Paramètres footer */
+@mixin footer
+{
+    margin: auto;
+    height: 60px;
+    background-color: $primary_color;
+    color: $logo_color;
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+}
+
+@mixin footer_h2
+{
+    font-family: $main_font;
+    font-size: 1.2em;
+    font-weight: 500;
+}
