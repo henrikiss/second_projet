@@ -182,7 +182,7 @@ section {
 
 .zoom:hover {
   transform: scale(1);
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 /* Menu 1 */
@@ -314,14 +314,14 @@ aside {
   width: 90%;
 }
 
-.subtitle1 {
+.subtitle_1 {
   display: flex;
   justify-content: center;
   width: 90%;
   margin: auto;
 }
 
-.subtitle2 {
+.subtitle_2 {
   display: flex;
   justify-content: center;
   margin: auto;

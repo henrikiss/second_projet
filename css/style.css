@@ -253,7 +253,7 @@ section {
 .zoom:hover {
   -webkit-transform: scale(1);
           transform: scale(1);
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 /* Menu 1 */
@@ -408,7 +408,7 @@ aside {
   margin: auto;
 }
 
-.subtitle2 {
+.subtitle_2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -603,7 +603,7 @@ aside {
 }
 
 /* border page 1 */
-.border_1 {
+.border1 {
   color: #3c1218;
   background: -webkit-gradient(linear, left bottom, left top, from(#f04a5e), color-stop(10%, #f04a5e), color-stop(10.01%, transparent)) no-repeat left bottom/0 100%;
   background: linear-gradient(to top, #f04a5e 0%, #f04a5e 10%, transparent 10.01%) no-repeat left bottom/0 100%;
