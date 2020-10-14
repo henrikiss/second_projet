@@ -372,14 +372,19 @@ aside {
   font-size: 2em;
 }
 
-.loading .point2 {
+.loading .point1 {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
 
-.loading .point3 {
+.loading .point2 {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
+}
+
+.loading .point3 {
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
 }
 
 /* éléments généraux des pages supplémentaires */

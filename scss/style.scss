@@ -292,12 +292,17 @@ aside {
   font-size: 2em;
 }
 
-.loading .point2 {
+.loading .point1 {
   animation-delay: 0.4s;
 }
 
-.loading .point3 {
+
+.loading .point2 {
   animation-delay: 0.8s;
+}
+
+.loading .point3 {
+  animation-delay: 0.12s;
 }
 
 /* éléments généraux des pages supplémentaires */
